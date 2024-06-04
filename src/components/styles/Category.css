@@ -1,0 +1,121 @@
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.category-content {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  padding-right: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-content h1 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 36px;
+  color: #ff6600;
+  margin-bottom: 20px;
+}
+.fa-tags{
+    margin-right: 50px;
+}
+
+.category-content p {
+  font-size: 18px;
+  color: #555555;
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 5px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.category-content button {
+  position: relative;
+  top: -7px;
+  left: -70px;
+  padding: 10px 20px;
+  margin-top: auto;
+  font-size: 25px;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: white;
+}
+
+.category-content button:hover {
+  background-color: #ccc;
+}
+
+.category-image {
+  flex-basis: 45%;
+  margin: 0 auto;
+}
+
+.category-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-box input {
+  width: 1000px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  background-color: white;
+}
+.user-cart-icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-shopping-cart{
+    margin-left: 50px;
+}
+@media (max-width: 768px) {
+  .category-content,
+  .category-image {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .category-content p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .category-content button {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}

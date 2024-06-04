@@ -1,0 +1,85 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000; 
+  }
+  
+  .logo {
+    width: 150px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.1rem; 
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: rgb(170, 165, 165); 
+  }
+  
+  .toggle-button {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 1001; 
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #fff;
+      /*background-color: blue;*/
+      width: 100%;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+    .logo{
+        z-index: 1;
+    }
+  
+    .nav-links.active {
+      display: flex;
+      transform: translateX(0);
+    }
+  
+    .toggle-button {
+      display: block;
+    }
+  
+    .toggle-button .fas.fa-times {
+      color: #333; 
+    }
+  
+    .toggle-button .fas.fa-bars {
+      color: #333; 
+    }
+  }
+
+  
+  
