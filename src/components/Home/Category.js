@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Category.css"; // Import Category.css
+import "../styles/Category.css"; 
 
 function Category() {
   return (
@@ -16,8 +16,9 @@ function Category() {
           </button>
         </div>
         <div className="user-cart-icons">
-          <i className="fas fa-user"></i>
-          <i className="fas fa-shopping-cart"></i>
+        <i className="fas fa-user"></i>
+        <i className="fas fa-shopping-cart"></i>
+       
         </div>
       </div>
     </div>

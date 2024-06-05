@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../components/Images/ecommerce logo.jpg';
-import '../components/styles/Navbar.css'; 
+import '../components/styles/Navbar.css';
 
 function Navbar() {
   const [showLinks, setShowLinks] = useState(false);
@@ -13,6 +13,10 @@ function Navbar() {
   return (
     <div className="navbar">
       <img src={logo} alt="Logo" className="logo" />
+      <div className="icons">
+        <i className="fas fa-user"></i>
+        <i className="fas fa-shopping-cart"></i>
+      </div>
       <button className="toggle-button" onClick={toggleLinks}>
         <i className={`fas ${showLinks ? 'fa-times' : 'fa-bars'}`}></i>
       </button>
