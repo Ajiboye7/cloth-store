@@ -1,0 +1,49 @@
+.product-of-the-year {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-of-the-year h3 {
+    font-family: 'Arial, sans-serif';
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .product-of-the-year-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-of-the-year-card img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .product-of-the-year-details {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .product-of-the-year-details h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .product-of-the-year-details p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 5px;
+  }
+  

@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+/*import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import '../styles/BestSellers.css';
+import '../styles/TestingSite.css.css';
 
-function BestSellers() {
+function TestingSite() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -17,8 +17,8 @@ function BestSellers() {
           lang: 'en',
           currentpage: '0',
           pagesize: '30',
-          categories: 'kids_newbornbaby_viewall',
-          concepts: 'H&M KIDS'
+          categories: 'kids_all',
+          concepts: 'H&M MAN'
         },
         headers: {
           'x-rapidapi-key': 'cdd55f2df6msh1337361e79a64f1p1b12c6jsn48d27f4e316a',
@@ -29,7 +29,6 @@ function BestSellers() {
       try {
         const response = await axios.request(options);
         const data = response.data.results;
-        console.log(data); // Log the data for debugging
         if (data && data.length > 0) {
           const selectedProducts = data.slice(0, 3);
           setProducts(selectedProducts);
@@ -55,9 +54,9 @@ function BestSellers() {
   }
 
   return (
-    <div className="best-sellers-section">
-      <h3>Best Sellers</h3>
-      <div className="best-sellers">
+    <div className="special-offers-section">
+      <h3>Special Offers</h3>
+      <div className="special-offers">
         {products.map((product) => (
           <div className="product-card" key={product.articleCode}>
             <img src={product.images[0].url} alt={product.name} />
@@ -71,4 +70,4 @@ function BestSellers() {
   );
 }
 
-export default BestSellers;
+export default TestingSite;*/

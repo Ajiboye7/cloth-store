@@ -1,0 +1,157 @@
+/*.new-arrivals-section {
+  padding: 20px;
+}
+
+.new-arrivals-section h3 {
+  font-size: 24px;
+  color: #333;
+  font-family: 'Arial, sans-serif';
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.new-arrivals {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-card h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+  font-family: 'Arial, sans-serif';
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #ff6600;
+  font-family: 'Arial, sans-serif';
+}
+
+.product-card button {
+  background-color: #333;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #555;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .new-arrivals-section h3 {
+    font-size: 20px;
+  }
+
+  .product-card h2 {
+    font-size: 16px;
+  }
+
+  .product-card p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    padding: 15px;
+  }
+
+  .new-arrivals-section h3 {
+    font-size: 18px;
+  }
+
+  .product-card h2 {
+    font-size: 14px;
+  }
+
+  .product-card p {
+    font-size: 12px;
+  }
+}*/
+
+.new-arrivals-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .new-arrivals-section h3 {
+    font-family: 'Arial, sans-serif';
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .new-arrivals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-card h2 {
+    font-family: 'Arial, sans-serif';
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    font-family: 'Arial, sans-serif';
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .product-card {
+      width: 100%;
+    }
+  }
+  
