@@ -91,20 +91,22 @@ function ClothProductDetail() {
           'x-rapidapi-host': 'apidojo-hm-hennes-mauritz-v1.p.rapidapi.com'
         }
       };
-
+  
       try {
         const response = await axios.request(options);
-        setProduct(response.data.product);
+        console.log("API response:", response.data); // Log the API response
+        // Adjust based on actual response structure
+        setProduct(response.data.product || response.data); 
         setLoading(false);
       } catch (error) {
+        console.error("API request error:", error);
         setError(error);
         setLoading(false);
       }
     };
-
+  
     fetchProductDetail();
   }, [productId]);
-
   if (loading) {
     return <div>Loading...</div>;
   }
