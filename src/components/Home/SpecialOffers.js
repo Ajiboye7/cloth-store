@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../styles/SpecialOffer.css';
+import { Link } from 'react-router-dom';
 
 function SpecialOffers() {
   const [products, setProducts] = useState([]);
@@ -58,18 +59,20 @@ function SpecialOffers() {
 
   return (
     <div className="special-offers-section">
-      <h3>Special Offers</h3>
-      <div className="special-offers">
-        {products.map((product) => (
-          <div className="product-card" key={product.id}>
+    <h3>Special Offers</h3>
+    <div className="special-offers">
+      {products.map((product) => (
+        <div className="product-card" key={product.id}>
+          <Link to={`/product/${product.id}`}>
             <img src={`https://${product.imageUrl}`} alt={product.name} />
             <h2>{product.name}</h2>
             <p>Price: ${product.price.current.value}</p>
             <p>Color: {product.colour}</p>
-          </div>
-        ))}
-      </div>
+          </Link>
+        </div>
+      ))}
     </div>
+  </div>
   );
 }
 

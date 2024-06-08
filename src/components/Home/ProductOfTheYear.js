@@ -33,7 +33,7 @@ function ProductOfTheYear() {
         const response = await axios.request(options);
         const data = response.data.products;
         if (data && data.length > 0) {
-          setProduct(data[30]); // Use the first product as "Product of the Year"
+          setProduct(data[30]);
         } else {
           throw new Error('No products available');
         }

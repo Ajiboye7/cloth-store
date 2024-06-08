@@ -7,7 +7,7 @@ import NewArrivals from "./NewArrival";
 import BestSellers from "./BestSellers";
 import SpecialOffers from './SpecialOffers';
 import ProductOfTheYear from "./ProductOfTheYear";
-import Shop from "../Shop";
+import Shop from "../Pages/Shop";
 
 function Home() {
   return (

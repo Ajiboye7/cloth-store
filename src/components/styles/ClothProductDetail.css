@@ -1,0 +1,38 @@
+.cloth-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.product-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.product-description,
+.product-color,
+.product-price {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.add-to-cart {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.add-to-cart:hover {
+  background-color: #0056b3;
+}
