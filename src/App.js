@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Shop from './components/Pages/Shop';
 import ProductDetail from './components/Pages/ProductDetail';
 import ClothProductDetail from './components/Pages/ClothProuctDetail';
+import SignUp from './components/Pages/Signup';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Navbar />
         <Routes>
         <Route path="/" element={<Home />} />
-        <Route path='shop' element= {<Shop/>}/>
+        <Route path='signup' element= {<SignUp/>}/>
       {/*  <Route path='/product/:productId' element={<ProductDetail />} />*/} 
       <Route path="/clothProductDetail/:productId" element={<ClothProductDetail />} />
         </Routes>

@@ -68,7 +68,7 @@ export default ClothProductDetail;*/
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-import '../styles/ClothProductDetail.css'; // Import CSS file for styling
+import '../styles/ClothProductDetail.css'; 
 
 function ClothProductDetail() {
   const { productId } = useParams();
@@ -94,8 +94,6 @@ function ClothProductDetail() {
   
       try {
         const response = await axios.request(options);
-        console.log("API response:", response.data); // Log the API response
-        // Adjust based on actual response structure
         setProduct(response.data.product || response.data); 
         setLoading(false);
       } catch (error) {
