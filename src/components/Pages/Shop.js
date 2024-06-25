@@ -7,7 +7,7 @@ function Shop() {
   const [shoes, setShoes] = useState([]);
   const [currentSuitsPage, setCurrentSuitsPage] = useState(1);
   const [currentShoesPage, setCurrentShoesPage] = useState(1);
-  const [productsPerPage] = useState(10); // Adjust this value based on how many products you want per page
+  const [productsPerPage] = useState(10);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 

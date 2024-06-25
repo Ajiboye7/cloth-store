@@ -11,7 +11,6 @@ function Home() {
     <div className="home-container">
       <Category />
       <Hero/>
-
       <NewArrivals/>
       <ProductOfTheYear/>
       <SpecialOffers/>
